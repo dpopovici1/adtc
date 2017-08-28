@@ -1,0 +1,221 @@
+/*header*/
+.top_header .contact_info_line{
+  text-align: right;
+  font-size: 12px;
+  border-bottom: none;
+}
+.top_header .social_icons{
+  position: relative;
+  top: 6px;
+  display: inline-block;
+}
+.top_header .subscribe_button{
+  margin-bottom: 0;
+  margin-right: 15px;
+  padding: 0px 10px;
+}
+.logo.no_retina{
+  display: none;
+}
+/*menu*/
+.menu_wrapper{
+  margin-top: 30px;
+  background: #066693;
+}
+.menu_wrapper .main_navbar {
+  margin-top: 0;
+}
+
+.menu-span{
+  position: relative;
+}
+.gototop{
+  position: absolute;
+  right: -40px;
+  border: 1px solid;
+  top: 6px;
+}
+@media (max-width: 992px) {
+  .gototop{
+    top: 26px;
+  }
+}
+#custom_menu.main_navbar.navbar .nav>li{
+  margin-left: 0;
+}
+/*dropdown menu icon*/
+#custom_menu.main_navbar.navbar a.dropdown-toggle > i, #custom_menu.main_navbar.navbar .dropdown-submenu a > i{
+  display: inline-block;
+}
+#custom_menu.main_navbar.navbar .nav>li>a.dropdown-toggle{
+  margin-right: 12px;
+}
+
+#custom_menu.main_navbar.navbar .nav>li>a{
+  position: relative;
+  padding: 0;
+  margin: 18px 26px;
+  font-size: 16px;
+  font-weight: normal;
+  color: white;
+}
+@media (max-width: 1200px) {
+  #custom_menu.main_navbar.navbar .nav > li > a {
+    font-size: 13px;
+    margin: 18px 17px;
+  }
+}
+/* | for menu */
+#custom_menu.main_navbar.navbar .nav>li:before{
+  content: '';
+  background: rgba(255,255,255,0.3);
+  position: absolute;
+  height: 16px;
+  width: 1px;
+  top: 20px;
+  left: 0;
+}
+#custom_menu.main_navbar.navbar .nav>li:last-child:after{
+  content: '';
+  background: rgba(255,255,255,0.3);
+  position: absolute;
+  height: 16px;
+  width: 1px;
+  top: 20px;
+  right: 0;
+}
+/*border-bottom for active link*/
+#custom_menu.main_navbar.navbar .nav>li>a:before{
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  display: none;
+  content: '';
+  background: white;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: -4px;
+  left: 0;
+}
+#custom_menu.main_navbar.navbar .nav>li.current-menu-item>a:before,
+#custom_menu.main_navbar.navbar .nav>li:hover>a:before,
+#custom_menu.main_navbar.navbar .nav>li.current_page_parent a:before{
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  display: block;
+  content: '';
+  background: white;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: -4px;
+  left: 0;
+}
+/*#custom_menu.main_navbar.navbar .nav>li:last-child>a{*/
+  /*!*padding: 10px;*!*/
+  /*font-size: 12px;*/
+  /*background-color: #FEC844;*/
+  /*text-transform: initial;*/
+  /*border: 1px solid rgb(91, 91, 91);*/
+  /*color: rgb(91, 91, 91);*/
+  /*display: inline-block;*/
+  /*text-shadow: none;*/
+  /*border-radius: 5px;*/
+/*}*/
+#custom_menu.main_navbar.navbar .nav>li.current-menu-item a,
+#custom_menu.main_navbar.navbar .nav>li.current_page_parent a{
+  color: white !important;
+}
+#custom_menu.main_navbar.navbar .nav>li ul.dropdown-menu li{
+  margin: 0 10px;
+  padding: 4px 5px;
+}
+#custom_menu.main_navbar.navbar .nav>li ul.dropdown-menu li:hover{
+  background: rgba(6, 102, 147, 0.15);
+  margin: 0 10px;
+  padding: 4px 5px;
+}
+#custom_menu.main_navbar.navbar .nav>li ul.dropdown-menu a{
+  color: #066693 !important;
+}
+/*@media (max-width: 992px){*/
+  /*#custom_menu.main_navbar.navbar .nav>li>a{*/
+    /*padding: 10px 5px;*/
+    /*padding-left: 0;*/
+    /*font-size: 13px;*/
+  /*}*/
+/*}*/
+
+/*mobile menu*/
+@media (max-width: 992px) {
+  #custom_menu.main_navbar.navbar #menu-main-menu-adtc.nav > li > a {
+    color: initial;
+  }
+
+  .menu_wrapper{
+    margin-top: 0;
+    background: none;
+  }
+
+  #custom_menu.main_navbar.navbar .nav>li.current-menu-item a,
+  #custom_menu.main_navbar.navbar .nav>li.current_page_parent a{
+    color: initial !important;
+  }
+}
+
+.fixed_header{
+  padding-bottom: 0;
+}
+
+h1.white{
+  color: #ffffff;
+}
+
+/*footer*/
+.custom_footer.site_footer{
+  background: #066693;
+  font-size: 14px;
+}
+.custom_footer.site_footer a,
+.custom_footer.site_footer strong{
+  color: #FEC844;
+}
+.footer_email{
+  font-size: 12px;
+}
+.site_secondary_footer {
+  display: none;
+}
+@media (max-width: 992px){
+  .site_footer a{
+    font-size: 12px;
+  }
+  .footer-phone{
+    font-size: 13px;
+  }
+}
+/*fixed_header*/
+.fixed_header .logo{
+  display: none;
+}
+/*cf7*/
+.wpcf7 .form-item{
+  margin-bottom: 15px !important;
+}
+.div.wpcf7-validation-errors{
+  margin: 0;
+  margin-top: 10px;
+}
+/*home*/
+.home  .wpb_content_element {
+  margin-bottom: 0;
+}
+.infusion-submit{
+  margin-top: 30px;
+}
+.time_zone{
+  margin-top: 15px;
+}
+label[for=inf_option_IunderstandthatKetamineTreatmentsmaynotbecoveredbyinsurance]{
+  font-weight: bold;
+}
